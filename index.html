@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Birthday</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="outside">
+        <div class="front">
+          <br><br><br>
+          <p>Happy Birthday Dad</p>
+          <div class="cake">
+            <div class="top-layer"></div>
+            <div class="middle-layer"></div>
+            <div class="bottom-layer"></div>
+            <div class="candle"></div>
+          </div>
+        </div>
+        <div class="back"></div>
+      </div>
+      <div class="inside">
+        <p id="wish1">Happy Birthday to the Best Dad! <br> Wish you health, love and happiness. <br> We love you! <br> - from Jacques and Émilie</p>
+         <br> <div id="wish2">Today's a big day; here is a big gift:</div>
+         <img id="image" src="gift.png" width="100%" height="920px" onclick="hideGift()"/>
+        <button type="button" onclick="showGift()" id="button"><h1>&#127873;</h1></button>
+      </div>
+    </div>
+    <script>
+        function showGift(){
+            document.getElementById('image').style.display = "block";
+            document.getElementById('button').style.display = "none";
+            document.getElementById('wish1').style.display = "none";
+            document.getElementById('wish2').style.display = "none";
+        }
+        function hideGift(){
+            document.getElementById('image').style.display = "none";
+            document.getElementById('button').style.display = "block";
+            document.getElementById('wish1').style.display = "block";
+            document.getElementById('wish2').style.display = "block";
+        }
+    </script>
+  </body>
+</html>
